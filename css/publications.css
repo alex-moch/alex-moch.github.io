@@ -4,6 +4,9 @@
   margin-top: -200px;
   width: calc(100% + 200px);
   text-align: justify;
+  display: grid;
+  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
 }
 
 #publication-wrapper:after {
@@ -16,7 +19,6 @@
 
 .publication {
   margin-top: 200px;
-  max-width: 500px;
   display: inline-block;
   text-align: left;
   margin-left: 100px;
