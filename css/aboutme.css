@@ -1,0 +1,75 @@
+#aboutme {
+  height: 100vh;
+  background: black;
+  background-image: url(../img/home.webp);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: -18vw -60vh;
+  padding: 0;
+}
+
+#aboutme-wrapper {
+  height: 100%;
+  padding-right: 100px;
+}
+
+#hi {
+  font-size: 100pt;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-variation-settings: "wdth" 75;
+  letter-spacing: 2px;
+  width: 400px;
+  text-align: right;
+  line-height: 90pt;
+  margin-bottom: 0;
+  margin-top: 30vh;
+  margin-left: auto;
+}
+
+#whoami {
+  width: 200pt;
+  text-transform: uppercase;
+  font-family: "JetBrains Mono";
+  font-weight: 600;
+  text-align: right;
+  font-size: 25pt;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.text {
+  position: absolute;
+  font-size: 14pt;
+  width: 420px;
+  right: 100px;
+  bottom: 100px;
+}
+
+.text > p {
+  color: white;
+  font-weight: 400;
+  font-variation-settings: "wdth" 30;
+  text-align: justify;
+}
+
+.text:before,
+.text:after {
+  font-size: 70pt;
+  color: var(--main-color);
+  position: absolute;
+  line-height: 0;
+}
+
+.text:before {
+  content: "「";
+  left: -100px;
+  top: 10px;
+}
+
+.text:after {
+  content: "」";
+  right: -100px;
+  bottom: 10px;
+}

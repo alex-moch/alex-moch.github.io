@@ -1,0 +1,402 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexander Moch</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aboutme.css" />
+    <link rel="stylesheet" href="css/publications.css" />
+    <link rel="stylesheet" href="css/teaching.css" />
+  </head>
+  <body>
+    <header>
+      <p>alexmoch<span class="blue">.</span>com</p>
+    </header>
+    <main>
+      <section id="aboutme" class="parallax">
+        <div id="aboutme-wrapper">
+          <p id="hi">
+            Hi<span class="blue">,</span> I<span class="blue">'</span>m Alex
+          </p>
+          <p id="whoami">
+            Cryptographer <span class="blue">&</span> IT<span class="blue"
+              >-</span
+            >Security Specialist
+          </p>
+          <div class="text">
+            <p>
+              I'm currently a postdoctoral researcher at the University of
+              Mannheim in Germany. I plan to relocate to Copenhagen, Denmark in
+              the second half of 2024 for a job in the industry.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+          imperdiet mi at tortor rhoncus rutrum. Proin sed leo tellus.
+          Suspendisse vitae est nisi. Mauris vestibulum justo id molestie
+          fermentum.
+        </p>
+      </section>
+
+      <section
+        id="education"
+        class="parallax"
+        style="background-image: url(img/education.webp)"
+      >
+        <div class="section-wrapper">
+          <p class="section-header">Education<span class="blue">.</span></p>
+          <div class="flex-container">
+            <div>2016 <span class="blue">-</span> 2023</div>
+            <div>Doktor der Naturwissenschaften</div>
+            <div>
+              <p>Proofs of Security</p>
+              <p>Message Authentication</p>
+              <p>Stream Cipher Encryption</p>
+            </div>
+          </div>
+          <hr class="solid" />
+          <div class="flex-container">
+            <div>2013 <span class="blue">-</span> 2016</div>
+            <div>
+              <p>Master of Science</p>
+              <p class="blue">Business Informatics</p>
+            </div>
+            <div>
+              <p>Computer Graphics</p>
+              <p>Cryptography <span class="blue">&</span> IT-Security</p>
+              <p>Data Mining <span class="blue">&</span> Finance</p>
+            </div>
+          </div>
+          <hr class="solid" />
+          <div class="flex-container">
+            <div>2010 <span class="blue">-</span> 2013</div>
+            <div>
+              <p>Bachelor of Science</p>
+              <p class="blue">Mathematics in Business and Economics</p>
+            </div>
+            <div>
+              <p>Economics</p>
+              <p>Computer Science</p>
+              <p>Business Administration</p>
+            </div>
+          </div>
+          <hr class="solid" />
+          <div class="flex-container">
+            <div>2001 <span class="blue">-</span> 2010</div>
+            <div>Abitur</div>
+            <div>
+              <p>Mathematics <span class="blue">&</span> Physics</p>
+              <p>German <span class="blue">&</span> English</p>
+              <p>Social Studies</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+          imperdiet mi at tortor rhoncus rutrum. Proin sed leo tellus.
+          Suspendisse vitae est nisi. Mauris vestibulum justo id molestie
+          fermentum.
+        </p>
+      </section>
+
+      <section
+        id="publications"
+        class="parallax"
+        style="background-image: url(img/publications.webp)"
+      >
+        <div class="section-wrapper">
+          <p class="section-header">Publications<span class="blue">.</span></p>
+
+          <div id="publication-wrapper">
+            <!-- JMC 2023 PUBLICATION -->
+            <div class="publication">
+              <p class="conference">
+                <span class="blue">2023</span>
+                <span class="white">|</span> Journal of Mathematical Cryptology
+              </p>
+              <p class="title">
+                Provable security against generic attacks on stream ciphers
+              </p>
+              <p class="authors">
+                <span class="blue">Alexander Moch</span>
+              </p>
+              <div class="comment">
+                <p>
+                  This paper unifies the earlier SAC 2019 and ToSC 2022 papers.
+                  It proves four generic stream cipher constructions to be
+                  secure and shows tight bounds with the matching TMDTO attacks.
+                </p>
+              </div>
+            </div>
+
+            <!-- TOSC 2022 PUBLICATION -->
+            <div class="publication">
+              <p class="conference">
+                <span class="blue">2022</span>
+                <span class="white">|</span> IACR Transactions on Symmetric
+                Cryptology
+              </p>
+              <p class="title">The DRACO Stream Cipher</p>
+              <p class="authors">
+                Matthias Hamann, <span class="blue">Alexander Moch</span>,
+                Matthias Krause and Vasily Mikhalev
+              </p>
+              <div class="comment">
+                <p>
+                  We improved the model from the earlier SAC 2019 work and
+                  proved a new generic stream cipher construction to be secure.
+                  Upon this, we proposed a new stream cipher design called
+                  DRACO.
+                </p>
+              </div>
+            </div>
+
+            <!-- CTCRYPT 2019 PUBLICATION -->
+            <div class="publication">
+              <p class="conference">
+                <span class="blue">2019</span>
+                <span class="white">|</span> Current Trends in Cryptology
+              </p>
+              <p class="title">Improving OBDD attacks against stream ciphers</p>
+              <p class="authors">
+                Matthias Hamann, Matthias Krause and
+                <span class="blue">Alexander Moch</span>
+              </p>
+              <div class="comment">
+                <p>
+                  Ordered binary decision diagrams can be used to obtain a
+                  secret internal state from a stream cipher. Our approach
+                  lowers the storage demand of such attacks.
+                </p>
+              </div>
+            </div>
+
+            <!-- SAC 2019 PUBLICATION -->
+            <div class="publication">
+              <p class="conference">
+                <span class="blue">2019</span>
+                <span class="white">|</span> Selected Areas in Cryptography
+              </p>
+              <p class="title">
+                Tight Security Bounds for Generic Stream Cipher Constructions
+              </p>
+              <p class="authors">
+                Matthias Hamann, Matthias Krause and
+                <span class="blue">Alexander Moch</span>
+              </p>
+              <div class="comment">
+                <p>
+                  We developed a model for abstracting stream ciphers similar to
+                  the Even-Mansour construction and proved tight bounds for two
+                  generic stream ciphers schemes.
+                </p>
+              </div>
+            </div>
+
+            <!-- ACNS 2019 PUBLICATION -->
+            <div class="publication">
+              <p class="conference">
+                <span class="blue">2019</span>
+                <span class="white">|</span> Applied Cryptography and Network
+                Security
+              </p>
+              <p class="title">
+                Parallelizable MACs Based on the Sum of PRPs with Security
+                Beyond the Birthday Bound
+              </p>
+              <p class="authors">
+                <span class="blue">Alexander Moch</span> and Eik List
+              </p>
+              <div class="comment">
+                <p>
+                  We adapted earlier work on the sum of permutation by Mennink
+                  and Neves to a Message Authentication Code and showed security
+                  beyond the birthday bound.
+                </p>
+              </div>
+            </div>
+
+            <!-- NETGAMES 2014 PUBLICATION -->
+            <div class="publication">
+              <p class="conference">
+                <span class="blue">2014</span>
+                <span class="white">|</span> Network and Systems Support for
+                Games
+              </p>
+              <p class="title">
+                Creation of Custom-made Serious Games with User-generated
+                Learning Content
+              </p>
+              <p class="authors">
+                Philip Mildner, Benjamin John,
+                <span class="blue">Alexander Moch</span> and Wolfgang Effelsberg
+              </p>
+              <div class="comment">
+                <p>
+                  This paper was written as part of a team project during my
+                  Master's. We implemented a serious game in which the player
+                  could acquire resources by solving riddles.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+          imperdiet mi at tortor rhoncus rutrum. Proin sed leo tellus.
+          Suspendisse vitae est nisi. Mauris vestibulum justo id molestie
+          fermentum.
+        </p>
+      </section>
+
+      <section
+        id="teaching"
+        class="parallax"
+        style="background-image: url(img/teaching.webp)"
+      >
+        <div class="section-wrapper">
+          <p class="section-header">Teaching<span class="blue">.</span></p>
+          <div id="teaching-wrapper">
+            <!-- FORMALE GRUNDLAGEN DER INFORMATIK -->
+            <div class="course">
+              <p class="type">Lecture (Bachelor's)</p>
+              <p class="name">
+                CS 301 <span class="blue">|</span> Formal Foundation of Computer
+                Science
+              </p>
+              <p class="description">
+                Basic topics like formal proofs, set theory, graph theory,
+                algebraic structures and finite state machines are discussed in
+                this course.
+              </p>
+              <p class="semesters">Fall Semesters 2016 – 2021</p>
+            </div>
+
+            <!-- ALGORITHMEN UND DATENSTRUKTUREN -->
+            <div class="course">
+              <p class="type">Lecture (Bachelor's)</p>
+              <p class="name">
+                CS 307 <span class="blue">|</span> Algorithms and Data
+                Structures
+              </p>
+              <p class="description">
+                Algorithms and data structures for sorting, hashing, searching
+                and graphs will be explained and their correctness will be
+                proved.
+              </p>
+              <p class="semesters">Fall Semesters 2018 – 2022</p>
+            </div>
+
+            <!-- CRYPTOGRAPHY -->
+            <div class="course">
+              <p class="type">Lecture (Bachelor's, Master's)</p>
+              <p class="name">
+                CS 404, CS 655 <span class="blue">|</span> Cryptography
+              </p>
+              <p class="description">
+                Basic cryptographic algorithms such as block encryption
+                functions, key stream generators, one-way cryptographic
+                functions, one-way functions and cryptographic hash functionsh.
+              </p>
+              <p class="semesters">Spring Semester 2021</p>
+            </div>
+
+            <!-- THEORETISCHE INFORMATIK -->
+            <div class="course">
+              <p class="type">Lecture (Bachelor's)</p>
+              <p class="name">
+                CS 406 <span class="blue">|</span> Theoretical Computer Science
+              </p>
+              <p class="description">
+                Basic computational models and mutual simulations, decidability,
+                complexity theory, information theory and cryptography, automata
+                theory, basics of programming languages and syntax analysis.
+              </p>
+              <p class="semesters">Spring Semesters 2016 – 2022</p>
+            </div>
+
+            <!-- ALGORITHMICS -->
+            <div class="course">
+              <p class="type">Lecture (Master's)</p>
+              <p class="name">
+                CS 550 <span class="blue">|</span> Algorithmics
+              </p>
+              <p class="description">
+                Linear programming, network algorithms, NP-completeness and the
+                algorithmic treatment of NP-hard problems
+              </p>
+              <p class="semesters">
+                Spring Semesters 2016 – 2017, 2020 – 2023, Fall Semesters 2018 –
+                2019
+              </p>
+            </div>
+
+            <!-- FORMALE GRUNDLAGEN DER INFORMATIK -->
+            <div class="course">
+              <p class="type">Seminar (Master's)</p>
+              <p class="name">
+                CS 701 <span class="blue">|</span> Advanced Algorithms for Flow
+                and Matching Problems
+              </p>
+              <p class="description">
+                Advanced algorithmic approaches leading to more efficient
+                algorithms for more general types of flow- and matching
+                problems.
+              </p>
+              <p class="semesters">Spring Semesters 2020 – 2021</p>
+            </div>
+
+            <!-- FORMALE GRUNDLAGEN DER INFORMATIK -->
+            <div class="course">
+              <p class="type">Seminar (Bachelor's)</p>
+              <p class="name">
+                SM 448 <span class="blue">|</span> Complexity Theoretical
+                Classification of Games
+              </p>
+              <p class="description">
+                This seminar considered board games and analyzed the
+                computational demand of a winning strategy. These are classified
+                within known complexity classes like P, NP, PSPACE, etc.
+              </p>
+              <p class="semesters">Fall Semester 2019</p>
+            </div>
+
+            <!-- FORMALE GRUNDLAGEN DER INFORMATIK -->
+            <div class="course">
+              <p class="type">Seminar (Bachelor's)</p>
+              <p class="name">
+                SM 448 <span class="blue">|</span> Quantum Computing
+              </p>
+              <p class="description">
+                We will look at the computation model of quantum computers as
+                well as algorithms and compare the algorithms' running time to
+                that of a classical computer.
+              </p>
+              <p class="semesters">Fall Semesters 2020 – 2022</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin
+          imperdiet mi at tortor rhoncus rutrum. Proin sed leo tellus.
+          Suspendisse vitae est nisi. Mauris vestibulum justo id molestie
+          fermentum.
+        </p>
+      </section>
+    </main>
+  </body>
+</html>

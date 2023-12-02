@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "Mona Sans";
+  src:
+    url("../fonts/MonaSans.woff2") format("woff2 supports variations"),
+    url("../fonts/MonaSans.woff2") format("woff2-variations"),
+    url("../fonts/MonaSans.ttf") format("truetype");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
+@font-face {
+  font-family: "Hubot Sans";
+  src:
+    url("../fonts/HubotSans.woff2") format("woff2 supports variations"),
+    url("../fonts/HubotSans.woff2") format("woff2-variations"),
+    url("../fonts/HubotSans.ttf") format("truetype");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
+@font-face {
+  font-family: "Roboto Flex";
+  src: url("../fonts/RobotoFlex.ttf") format("truetype");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
+:root {
+  --main-color: #50b7f9;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background-color: #f1f1f1;
+  font-family: "Roboto Flex", "Courier New";
+  font-weight: 500;
+  font-size: 14pt;
+  -webkit-font-smoothing: antialiased !important;
+  -moz-osx-font-smoothing: grayscale !important;
+}
+
+header {
+  width: 100%;
+  text-align: right;
+  position: absolute;
+}
+
+header > p {
+  margin-top: 30px;
+  margin-right: 100px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-variation-settings: "wdth" 30;
+}
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100px;
+  overflow: hidden;
+}
+
+.parallax {
+  color: white;
+}
+
+.content {
+  overflow: hidden;
+  padding: 100px;
+}
+
+.content > p {
+  text-align: center;
+  margin: auto;
+  width: 500px;
+  font-family: "JetBrains Mono";
+  font-size: 14pt;
+  line-height: 2;
+}
+
+.section-wrapper {
+  padding: 10%;
+  width: 80%;
+}
+
+.section-header {
+  font-size: 30pt;
+  font-weight: 550;
+  margin-bottom: 60px;
+  color: white;
+}
+
+.flex-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.flex-container > div {
+  font-weight: 450;
+  font-variation-settings:
+    "slnt" -0,
+    "wdth" 87;
+  font-size: 18pt;
+}
+
+.flex-container > div:nth-child(1) {
+  width: 30%;
+}
+
+.flex-container > div:nth-child(2) {
+  width: 40%;
+}
+
+.flex-container > div:nth-child(3) {
+  width: 240px;
+  text-align: right;
+}
+
+.flex-container > div:nth-child(3) > p {
+  font-weight: 300;
+  font-size: 16pt;
+}
+
+.flex-container p {
+  margin: 5px 0;
+}
+
+hr.solid {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border: 1px solid white;
+  opacity: 0.2;
+}
+
+.blue {
+  color: var(--main-color);
+  opacity: 1;
+}
+
+.white {
+  color: white;
+  opacity: 1;
+}

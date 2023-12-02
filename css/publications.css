@@ -1,0 +1,81 @@
+#publication-wrapper {
+  margin-left: -100px;
+  margin-right: -100px;
+  margin-top: -200px;
+  width: calc(100% + 200px);
+  text-align: justify;
+}
+
+#publication-wrapper:after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 0;
+  visibility: hidden;
+}
+
+.publication {
+  margin-top: 200px;
+  max-width: 500px;
+  display: inline-block;
+  text-align: left;
+  margin-left: 100px;
+  margin-right: 100px;
+  vertical-align: top;
+}
+
+.publication > .conference {
+  color: grey;
+  font-weight: 600;
+  font-variation-settings: "wdth" 75;
+}
+
+.publication > .title {
+  font-size: 18pt;
+  font-variation-settings: "wdth" 50;
+}
+
+.publication > .authors {
+  font-size: 18pt;
+  font-weight: 400;
+  font-variation-settings: "wdth" 50;
+  letter-spacing: -0.5px;
+  color: grey;
+}
+
+.comment {
+  position: relative;
+  display: inline-block;
+  /*display: none;*/
+  margin-top: 1em;
+}
+
+.comment > p {
+  color: white;
+  font-weight: 400;
+  font-variation-settings:
+    "wdth" 50,
+    "slnt" -8;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.comment:before,
+.comment:after {
+  font-size: 60pt;
+  color: var(--main-color);
+  position: absolute;
+  line-height: 0;
+}
+
+.comment:before {
+  content: "「";
+  left: -80px;
+  top: 30px;
+}
+
+.comment:after {
+  content: "」";
+  right: -80px;
+  bottom: 30px;
+}

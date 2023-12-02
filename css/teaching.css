@@ -1,0 +1,54 @@
+#teaching-wrapper {
+  margin-left: -100px;
+  margin-right: -100px;
+  margin-top: -200px;
+  width: calc(100% + 200px);
+  text-align: justify;
+}
+
+#teaching-wrapper:after {
+  content: "";
+  display: inline-block;
+  width: 50%;
+  height: 0;
+  visibility: hidden;
+}
+
+.course {
+  margin-top: 200px;
+  max-width: 500px;
+  display: inline-block;
+  text-align: left;
+  margin-left: 100px;
+  margin-right: 100px;
+  vertical-align: top;
+}
+
+.course > .type {
+  color: grey;
+  font-weight: 600;
+  font-variation-settings: "wdth" 75;
+}
+
+.course > .name {
+  font-size: 18pt;
+  font-variation-settings: "wdth" 50;
+}
+
+.course > .description {
+  color: white;
+  font-weight: 400;
+  font-variation-settings:
+    "wdth" 50,
+    "slnt" -8;
+  text-align: left;
+  text-justify: inter-word;
+}
+
+.course > .semesters {
+  font-size: 18pt;
+  font-weight: 400;
+  font-variation-settings: "wdth" 50;
+  letter-spacing: -1px;
+  color: grey;
+}
