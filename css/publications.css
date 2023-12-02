@@ -6,7 +6,18 @@
   text-align: justify;
   display: grid;
   grid-gap: 10px;
-  grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+}
+
+@media screen and (max-width: 600px) {
+  #publication-wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #publication-wrapper {
+    grid-template-columns: repeat(auto-fill, minmax(600px, 1fr));
+  }
 }
 
 #publication-wrapper:after {

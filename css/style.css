@@ -90,9 +90,9 @@ header > p {
 .content > p {
   text-align: center;
   margin: auto;
-  width: 500px;
+  max-width: 500px;
   font-family: "JetBrains Mono";
-  font-size: 14pt;
+  font-size: 12pt;
   line-height: 2;
 }
 
@@ -110,7 +110,7 @@ header > p {
 
 .flex-container {
   display: flex;
-  align-items: center;
+  align-items: top;
   justify-content: space-between;
   flex-wrap: wrap;
 }
@@ -124,16 +124,38 @@ header > p {
 }
 
 .flex-container > div:nth-child(1) {
-  width: 30%;
+  width: 120px;
+  margin-right: 20px;
+  text-align: left;
+  margin-bottom: 40px;
 }
 
 .flex-container > div:nth-child(2) {
-  width: 40%;
+  width: 420px;
+  text-align: left;
 }
 
 .flex-container > div:nth-child(3) {
-  width: 240px;
+  width: 235px;
   text-align: right;
+}
+
+@media screen and (max-width: 1000px) {
+  .flex-container > div:nth-child(3) {
+    width: 100%;
+    text-align: left;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .flex-container > div:nth-child(1) {
+    width: 100%;
+  }
+
+  .flex-container > div:nth-child(2) {
+    width: 100%;
+    margin-bottom: 40px;
+  }
 }
 
 .flex-container > div:nth-child(3) > p {
@@ -142,7 +164,8 @@ header > p {
 }
 
 .flex-container p {
-  margin: 5px 0;
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
 
 hr.solid {
