@@ -14,15 +14,33 @@
 }
 
 #aboutme-wrapper {
-  height: 100%;
-  padding-right: 100px;
+  height: 100vh;
+  justify-content: space-between;
+  width: fit-content;
+  position: absolute;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  margin-right: min(10vw, 100px);
+  margin-left: min(10vw, 100px);
 }
 
-#hi,
-#alex,
+#domain {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-variation-settings: "wdth" 30;
+  margin-bottom: 0;
+}
+
+#domain,
+#hi-wrapper,
+.text {
+  margin-left: auto;
+}
+
 #whoami {
   width: 350px;
-  margin-left: auto;
 }
 
 #hi {
@@ -33,8 +51,7 @@
   letter-spacing: 2px;
   text-align: right;
   line-height: 90pt;
-  margin-bottom: 0;
-  margin-top: 10vh;
+  margin: 0;
 }
 
 #whoami {
@@ -43,47 +60,38 @@
   font-weight: 600;
   text-align: right;
   font-size: 25pt;
-  margin-top: 0;
-  margin-right: 0;
+  margin: 0;
 }
 
 .text {
-  position: absolute;
-  font-size: 14pt;
-  max-width: 420px;
-  right: 0;
-  bottom: 0;
-  padding: min(7%, 50px);
-  margin: min(7%, 50px);
+  position: relative;
+  margin-bottom: 50px;
 }
 
-.text > p {
+#aboutme-text {
   color: white;
   font-weight: 400;
   font-variation-settings: "wdth" 30;
   text-align: justify;
+  max-width: 420px;
 }
 
-.text:before,
-.text:after {
-  content: "」";
-  font-size: 70pt;
-  color: var(--main-color);
+.qmark {
   position: absolute;
+  font-size: 70pt;
   width: 25pt;
-  overflow: hidden;
-  white-space: nowrap;
-  unicode-bidi: embed;
+  color: var(--main-color);
   margin: 0;
 }
 
-.text:before {
+#opening {
   direction: rtl;
-  left: 0;
-  top: 0;
+  top: max(-30px, -3vw);
+  left: max(-30px, -3vw);
 }
 
-.text:after {
-  right: 0;
-  bottom: 0;
+#closing {
+  bottom: max(-30px, -3vw);
+  right: max(-30px, -3vw);
+  text-align: right;
 }

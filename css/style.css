@@ -54,21 +54,6 @@ html {
   -moz-osx-font-smoothing: grayscale !important;
 }
 
-header {
-  width: 100%;
-  text-align: right;
-  position: absolute;
-}
-
-header > p {
-  margin-top: 30px;
-  margin-right: 100px;
-  color: white;
-  text-transform: uppercase;
-  font-weight: 700;
-  font-variation-settings: "wdth" 30;
-}
-
 .parallax {
   background-attachment: fixed;
   background-position: center;
