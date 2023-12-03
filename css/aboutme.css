@@ -53,14 +53,8 @@
   max-width: 420px;
   right: 0;
   bottom: 0;
-  margin: 100px;
-}
-
-@media screen and (max-width: 620px) {
-  .text {
-    max-width: 100%;
-    margin: 50px;
-  }
+  padding: min(7%, 50px);
+  margin: min(7%, 50px);
 }
 
 .text > p {
@@ -72,20 +66,24 @@
 
 .text:before,
 .text:after {
+  content: "」";
   font-size: 70pt;
   color: var(--main-color);
   position: absolute;
-  line-height: 0;
+  width: 25pt;
+  overflow: hidden;
+  white-space: nowrap;
+  unicode-bidi: embed;
+  margin: 0;
 }
 
 .text:before {
-  content: "「";
-  left: -100px;
-  top: 10px;
+  direction: rtl;
+  left: 0;
+  top: 0;
 }
 
 .text:after {
-  content: "」";
-  right: -100px;
-  bottom: 10px;
+  right: 0;
+  bottom: 0;
 }
