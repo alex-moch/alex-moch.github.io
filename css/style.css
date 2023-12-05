@@ -50,6 +50,7 @@ html {
   font-family: "Roboto Flex", "Courier New";
   font-weight: 500;
   font-size: 14pt;
+  text-shadow: 0 0 8px black;
   -webkit-font-smoothing: antialiased !important;
   -moz-osx-font-smoothing: grayscale !important;
 }
@@ -68,8 +69,11 @@ html {
 }
 
 .content {
+  background: black;
+  color: white;
   overflow: hidden;
-  padding: 100px;
+  box-shadow: 0 0 200px 100px black;
+  filter: drop-shadow(0 0 0 black);
 }
 
 .content > p {
@@ -82,13 +86,17 @@ html {
 }
 
 .section-wrapper {
-  padding: 10%;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  padding-left: 10vw;
+  padding-right: 10vw;
   width: 80%;
 }
 
 .section-header {
   font-size: 30pt;
   font-weight: 550;
+  margin-top: 0;
   margin-bottom: 60px;
   color: white;
 }

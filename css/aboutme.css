@@ -1,16 +1,6 @@
 #aboutme {
   height: 100vh;
-  background: black;
   padding: 0;
-}
-
-@media screen and (min-width: 850px) {
-  #aboutme {
-    background-image: url(../img/home.webp);
-    background-size: 1000px;
-    background-repeat: no-repeat;
-    background-position: -150px 25%;
-  }
 }
 
 #aboutme-wrapper {
@@ -39,6 +29,18 @@
   margin-left: auto;
 }
 
+#alex {
+  color: white;
+  font-size: 100pt;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-variation-settings: "wdth" 75;
+  letter-spacing: 2px;
+  text-align: right;
+  line-height: 90pt;
+  margin: -30px;
+}
+
 #whoami {
   width: 350px;
 }
@@ -65,7 +67,7 @@
 
 .text {
   position: relative;
-  margin-bottom: 50px;
+  margin-bottom: 200px;
 }
 
 #aboutme-text {
