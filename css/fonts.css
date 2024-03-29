@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "Mona Sans";
+  src: url("../fonts/MonaSans.woff2") format("woff2 supports variations"),
+    url("../fonts/MonaSans.woff2") format("woff2-variations"),
+    url("../fonts/MonaSans.ttf") format("truetype");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
+@font-face {
+  font-family: "Hubot Sans";
+  src: url("../fonts/HubotSans.woff2") format("woff2 supports variations"),
+    url("../fonts/HubotSans.woff2") format("woff2-variations"),
+    url("../fonts/HubotSans.ttf") format("truetype");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
+@font-face {
+  font-family: "Roboto Flex";
+  src: url("../fonts/RobotoFlex.ttf") format("truetype");
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
+@font-face {
+  font-family: "JetBrains Mono";
+  src: url("../fonts/JetBrainsMono.ttf") format("truetype");
+  font-weight: 100 800;
+}
+
+@font-face {
+  font-family: "JetBrains Mono Italic";
+  src: url("../fonts/JetBrainsMonoItalic.ttf") format("truetype");
+  font-style: italic;
+  font-weight: 100 800;
+}

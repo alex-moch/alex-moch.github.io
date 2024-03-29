@@ -1,0 +1,30 @@
+#home {
+  height: 100vh;
+  font-size: 32pt;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  border-bottom: 1px solid var(--separator);
+}
+
+#education .image {
+  /* SOURCE: https://unsplash.com/photos/black-chair-lot-2xaF4TbjXT0 */
+  background-image: url("../img/education.webp");
+}
+
+#research .image {
+  /* SOURCE: https://unsplash.com/photos/text-IBXcdiq-o0A */
+  background-image: url("../img/research.webp");
+}
+
+#teaching .image {
+  /* SOURCE: https://unsplash.com/photos/grayscale-photography-of-chairs-with-no-people-8uWnMvmffOs */
+  background-image: url("../img/teaching.webp");
+}
+
+#future .image {
+  /* SOURCE: https://unsplash.com/photos/empty-train-track-during-daytimee-a333ixMpr68 */
+  background-image: url("../img/future.webp");
+}

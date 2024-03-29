@@ -1,0 +1,73 @@
+:root {
+  --main-bg: #000000;
+  --main-fg: #ffffff;
+  --highlight: #00ccff;
+  --separator: #464646;
+}
+
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background-color: var(--main-bg);
+  color: var(--main-fg);
+  font-family: "JetBrains Mono", monospace;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+main {
+  border-left: 1px solid var(--separator);
+}
+
+.title {
+  text-align: center;
+  font-size: 32pt;
+  text-transform: uppercase;
+  padding: 32px;
+  border-bottom: 1px solid var(--separator);
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0px;
+  justify-content: space-between;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom: 1px solid var(--separator);
+  border-right: 1px solid var(--separator);
+  padding: 50px;
+  line-height: 1.5;
+  box-sizing: border-box;
+  flex: 500px;
+}
+
+.image {
+  background-size: cover;
+  background-position: center;
+}
+
+.half-width {
+  min-height: 400px;
+}
+
+.third-width .box {
+  justify-content: start;
+}
+
+p {
+  font-family: "Mona Sans";
+  margin: 0;
+}
+
+div.box p:first-child {
+  font-weight: 500;
+  font-size: 14pt;
+  margin-bottom: 10px;
+}
