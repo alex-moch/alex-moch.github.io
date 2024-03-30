@@ -37,7 +37,9 @@
     <!-- MAIN CONTENT BEGINS HERE. -->
     <main>
       <!-- FULL-HEIGHT SHORT INTRODUCTION. -->
-      <section id="home" class="box">My name is Alex. I am a cryptography researcher.</section>
+      <section id="home">
+        <div id="intro" class="box">My name is Alex. I am a cryptography researcher.</div>
+      </section>
       <!-- SECTION ON HIGHER EDUCATION. -->
       <section id="education">
         <div class="title box">Higher education.</div>
@@ -217,5 +219,23 @@
         </div>
       </section>
     </main>
+    <!-- JAVASCRIPT. -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.cells.min.js"></script>
+    <script>
+      VANTA.CELLS({
+        el: "#intro",
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: true,
+        minHeight: 200.0,
+        minWidth: 200.0,
+        scale: 1.0,
+        color1: 0x0,
+        color2: 0x333333,
+        size: 5.0,
+        speed: 2.0,
+      });
+    </script>
   </body>
 </html>
