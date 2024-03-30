@@ -33,7 +33,3 @@ nav ul li a {
   text-decoration: none;
   text-align: center;
 }
-
-nav ul li a:hover {
-  color: var(--highlight);
-}

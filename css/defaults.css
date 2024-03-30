@@ -66,14 +66,28 @@ section:nth-child(2n + 1) .half-width {
 .third-width .box {
   justify-content: start;
 }
-
-p {
+.box p {
   font-family: "Mona Sans", sans-serif;
   margin: 0;
+  margin-bottom: 5px;
+}
+
+.box p:last-child {
+  margin-bottom: 0;
 }
 
 div.box p:first-child {
   font-weight: 500;
   font-size: 14pt;
   margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-fg);
+  font-weight: 600;
+}
+
+a:hover {
+  text-decoration: underline;
 }
