@@ -68,7 +68,7 @@ section:nth-child(2n + 1) .half-width {
 }
 
 p {
-  font-family: "Mona Sans";
+  font-family: "Mona Sans", sans-serif;
   margin: 0;
 }
 
