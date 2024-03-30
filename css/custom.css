@@ -28,3 +28,8 @@
   /* SOURCE: https://unsplash.com/photos/empty-train-track-during-daytimee-a333ixMpr68 */
   background-image: url("../img/future.webp");
 }
+
+#contact .image {
+  /* SOURCE: https://unsplash.com/photos/black-rotary-phone-on-white-table-l5NYUg6bkFA */
+  background-image: url("../img/contact.webp");
+}
