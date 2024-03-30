@@ -45,16 +45,22 @@ main {
   padding: 50px;
   line-height: 1.5;
   box-sizing: border-box;
-  flex: 500px;
+  flex: 440px;
 }
 
 .image {
   background-size: cover;
   background-position: center;
+  min-height: 300px;
 }
 
 .half-width {
   min-height: 400px;
+}
+
+/* Always show the image first. */
+section:nth-child(2n + 1) .half-width {
+  flex-wrap: wrap-reverse;
 }
 
 .third-width .box {
