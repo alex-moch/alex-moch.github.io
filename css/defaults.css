@@ -1,8 +1,28 @@
 :root {
+  /* Colors. */
   --main-bg: #000000;
   --main-fg: #ffffff;
   --highlight: #00ccff;
   --separator: #464646;
+  /* Fonts. */
+  --font-mono: "JetBrains Mono", monospace;
+  --font-sans: "Mona Sans", sans-serif;
+  /* Font sizes. */
+  --font-size-intro: 32pt;
+  --font-size-title: 32pt;
+  /* Paddings. */
+  --padding-title: 32pt;
+  --padding-box: 50px;
+}
+
+@media (max-width: 700px) {
+  :root {
+    /* Font sizes. */
+    --font-size-intro: 24pt;
+    --font-size-title: 24pt;
+    /* Paddings. */
+    --padding-box: 30px;
+  }
 }
 
 body,
@@ -12,7 +32,7 @@ html {
   padding: 0;
   background-color: var(--main-bg);
   color: var(--main-fg);
-  font-family: "JetBrains Mono", monospace;
+  font-family: var(--font-mono);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -23,9 +43,8 @@ main {
 
 .title {
   text-align: center;
-  font-size: 32pt;
+  font-size: var(--font-size-title);
   text-transform: uppercase;
-  padding: 32px;
   border-bottom: 1px solid var(--separator);
 }
 
@@ -42,7 +61,7 @@ main {
   justify-content: center;
   border-bottom: 1px solid var(--separator);
   border-right: 1px solid var(--separator);
-  padding: 50px;
+  padding: var(--padding-box);
   line-height: 1.5;
   box-sizing: border-box;
   flex: 440px;
@@ -67,7 +86,7 @@ section:nth-child(2n + 1) .half-width {
   justify-content: start;
 }
 .box p {
-  font-family: "Mona Sans", sans-serif;
+  font-family: var(--font-sans);
   margin: 0;
   margin-bottom: 5px;
 }
