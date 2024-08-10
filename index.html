@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MY NAME IS ALEX.</title>
+    <title>Alexander Moch</title>
     <meta
       name="description"
       content="Dr. Alexander Moch, Cryptography Researcher and Lecturer at the University of Mannheim."
@@ -15,245 +15,98 @@
     />
     <meta name="robots" content="index, follow" />
     <!-- FAVICONS. -->
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png" />
-    <link rel="manifest" href="img/favicon/site.webmanifest" />
-    <link rel="mask-icon" href="img/favicon/safari-pinned-tab.svg" color="#5bbad5" />
-    <link rel="shortcut icon" href="img/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="favicon/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
     <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="msapplication-config" content="img/favicon/browserconfig.xml" />
+    <meta name="msapplication-config" content="favicon/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
-    <!-- CSS FILES. -->
-    <link rel="stylesheet" href="css/fonts.css" />
-    <link rel="stylesheet" href="css/defaults.css" />
-    <link rel="stylesheet" href="css/header.css" />
-    <link rel="stylesheet" href="css/custom.css" />
+    <!-- STYLE. -->
+    <style>
+      body,
+      html {
+        height: 100%;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #fdf6ed;
+      }
+
+      .icons {
+        display: flex;
+        gap: 30px;
+      }
+
+      .icons svg {
+        width: 50px;
+        height: 50px;
+        cursor: pointer;
+        transition: fill 0.3s ease;
+      }
+
+      .icons a:hover svg {
+        fill: #777777;
+      }
+    </style>
   </head>
+
   <body>
-    <!-- HEADER WITH THE NAVIGATION BAR. -->
-    <header>
-      <nav>
-        <ul>
-          <li><a href="#home">alexmoch.com</a></li>
-          <li><a href="#education">education</a></li>
-          <li><a href="#research">research</a></li>
-          <li><a href="#teaching">teaching</a></li>
-          <li><a href="#future">future</a></li>
-          <li><a href="#contact">contact</a></li>
-        </ul>
-      </nav>
-    </header>
-    <!-- MAIN CONTENT BEGINS HERE. -->
-    <main>
-      <!-- FULL-HEIGHT SHORT INTRODUCTION. -->
-      <section id="home">
-        <div id="intro" class="box">My name is Alex. I am a cryptography researcher.</div>
-      </section>
-      <!-- SECTION ON HIGHER EDUCATION. -->
-      <section id="education">
-        <div class="title box">Higher education.</div>
-        <div class="row half-width">
-          <div class="box image"></div>
-          <div class="box" id="edu-text">
-            <p>I received all of my higher education from the University of Mannheim.</p>
-            <p>
-              In school, I was always good at math and had an interest in economics. So, I obtained my Bachelor's degree
-              in Mathematics in Business and Economics. I also took a couple of courses in computer science and decided
-              that I wanted to pursue that path.
-            </p>
-            <p>
-              The Master's program in Business Informatics offered a wide selection of courses. I took most of my
-              courses in computer graphics and theoretical computer science, with a few in data mining and finance.
-            </p>
-            <p>
-              Eventually, I decided to pursue a doctorate in cryptography. This was not a structured program but rather
-              consisted of mostly independent research, along with other duties, that eventually resulted in a thesis.
-            </p>
-          </div>
-        </div>
-        <div class="row third-width">
-          <div class="box">
-            <p>Bachelor of Science (B. Sc.)</p>
-            <p>
-              Mathematics in Business and Economics
-              <br />
-              2010 - 2013
-            </p>
-          </div>
-          <div class="box">
-            <p>Master of Science (M. Sc.)</p>
-            <p>
-              Business Informatics
-              <br />
-              2013 - 2016
-            </p>
-          </div>
-          <div class="box">
-            <p>Doctor of the Natural Sciences (Dr. rer. nat.)</p>
-            <p>
-              Provable security for lightweight message authentication and encryption
-              <br />
-              2016 - 2023
-            </p>
-          </div>
-        </div>
-      </section>
-      <!-- SECTION ON RESEARCH AND PUBLICATIONS. -->
-      <section id="research">
-        <div class="title box">Research and Publications.</div>
-        <div class="row half-width">
-          <div class="box" id="res-text">
-            <p>My research focuses on creating more resource efficient schemes.</p>
-            <p>
-              My doctoral research was dedicated to provable security in the random oracle model. Here, some building
-              blocks were replaced with perfectly random counterparts, which then allowed to prove lower bounds on
-              security. This demonstrated the absence of generic attacks.
-            </p>
-            <p>
-              The big picture is to find <q>small</q> schemes with good security properties. These can then be
-              implemented in hardware with little implementation cost.
-            </p>
-            <p>
-              Based on that research, we proposed a stream cipher called DRACO. Currently, I am working on stream
-              ciphers that can withstand attacks by an adversary with a quantum computer.
-            </p>
-          </div>
-          <div class="box image"></div>
-        </div>
-        <div class="row third-width">
-          <div class="box">
-            <p>Provable security against generic attacks on stream ciphers</p>
-            <p>Alexander Moch</p>
-            <p>Journal of Mathematical Cryptology 2023</p>
-          </div>
-          <div class="box">
-            <p>
-              The DRACO Stream Cipher: A Power-efficient Small-state Stream Cipher with Full Provable Security against
-              TMDTO Attacks
-            </p>
-            <p>Matthias Hamann, Alexander Moch, Matthias Krause and Vasily Mikhalev</p>
-            <p>IACR Transactions on Symmetric Cryptology 2022</p>
-          </div>
-          <div class="box">
-            <p>Improving OBDD attacks against stream ciphers</p>
-            <p>Matthias Hamann, Matthias Krause and Alexander Moch</p>
-            <p>Current Trends in Cryptology 2019</p>
-          </div>
-          <div class="box">
-            <p>Tight Security Bounds for Generic Stream Cipher Constructions</p>
-            <p>Matthias Hamann, Matthias Krause and Alexander Moch</p>
-            <p>Selected Areas in Cryptography 2019</p>
-          </div>
-          <div class="box">
-            <p>Parallelizable MACs Based on the Sum of PRPs with Security Beyond the Birthday Bound</p>
-            <p>Alexander Moch and Eik List</p>
-            <p>Applied Cryptography and Network Security 2019</p>
-          </div>
-          <div class="box">
-            <p>Creation of Custom-made Serious Games with User-generated Learning Content</p>
-            <p>Philip Mildner, Benjamin John, Alexander Moch and Wolfgang Effelsberg</p>
-            <p>Network and Systems Support for Games 2014</p>
-          </div>
-        </div>
-      </section>
-      <!-- SECTION ON UNIVERSITY TEACHING. -->
-      <section id="teaching">
-        <div class="title box">Teaching.</div>
-        <div class="row half-width">
-          <div class="box image"></div>
-          <div class="box" id="res-text">
-            <p>I was involved into teaching several lectures and seminars.</p>
-            <p>
-              Teaching has been a very significant part of my work. I was responsible for the tutorials for all the
-              courses we offer, either by supervising teaching assistants or by teaching the tutorials myself.
-            </p>
-            <p>
-              Additionally, I was fully in charge of organizing the seminars we offered. Of course, there were also
-              exams to be graded and theses to be supervised.
-            </p>
-            <p>In the spring semester of 2024, I am teaching the course Cryptography I.</p>
-          </div>
-        </div>
-        <div class="row third-width">
-          <div class="box">
-            <p>Formal Foundations of Computer Science</p>
-            <p>Fall 2016 - 2021</p>
-          </div>
-          <div class="box">
-            <p>Algorithms and Data Structures</p>
-            <p>Fall 2018 - 2022</p>
-          </div>
-          <div class="box">
-            <p>Cryptography</p>
-            <p>Spring 2021, 2024</p>
-          </div>
-          <div class="box">
-            <p>Theoretical Computer Science</p>
-            <p>Fall 2016 - 2022</p>
-          </div>
-          <div class="box">
-            <p>Algorithmics</p>
-            <p>Spring 2016 – 2017, 2020 – 2023, Fall 2018 – 2019</p>
-          </div>
-          <div class="box">
-            <p>Advanced Algorithms for Flow and Matching Problems</p>
-            <p>Spring 2020 – 2021</p>
-          </div>
-          <div class="box">
-            <p>Complexity Theoretical Classification of Games</p>
-            <p>Fall 2019</p>
-          </div>
-          <div class="box">
-            <p>Quantum Computing</p>
-            <p>Fall 2020 - 2022</p>
-          </div>
-        </div>
-      </section>
-      <!-- SECTION ON FUTURE PLANS. -->
-      <section id="future">
-        <div class="title box">Future.</div>
-        <div class="row half-width">
-          <div class="box" id="res-text">
-            <p>Next, I want to transition from academia to work in the industry.</p>
-          </div>
-          <div class="box image"></div>
-        </div>
-      </section>
-      <section id="contact">
-        <div class="title box">Contact.</div>
-        <div class="row half-width">
-          <div class="box image"></div>
-          <div class="box">
-            <p>You want to contact me?</p>
-            <p>
-              You can find me on <a href="https://www.linkedin.com/in/alexander-moch">LinkedIn</a>. Also check out my
-              <a href="https://www.wim.uni-mannheim.de/ths/moch">profile page</a> at the University of Mannheim. I plan
-              to update this section as soon as I find out how to best obfuscate my email address and phone number in
-              HTML.
-            </p>
-            <p>This website is hosted on <a href="https://github.com/alex-moch/alex-moch.github.io">GitHub</a>.</p>
-          </div>
-        </div>
-      </section>
-    </main>
-    <!-- JAVASCRIPT. -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.cells.min.js"></script>
-    <script>
-      VANTA.CELLS({
-        el: "#intro",
-        mouseControls: true,
-        touchControls: true,
-        gyroControls: true,
-        minHeight: 200.0,
-        minWidth: 200.0,
-        scale: 1.0,
-        color1: 0x0,
-        color2: 0x333333,
-        size: 5.0,
-        speed: 2.0,
-      });
-    </script>
+    <div class="icons">
+      <!-- LinkedIn SVG -->
+      <a
+        href="https://www.linkedin.com/in/alexander-moch"
+        target="_blank"
+        aria-label="LinkedIn"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+          fill="#a19d97"
+        >
+          <path
+            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+          />
+        </svg>
+      </a>
+
+      <!-- Xing SVG -->
+      <a
+        href="https://www.xing.com/profile/Alexander_Moch5"
+        target="_blank"
+        aria-label="Xing"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 384 512"
+          fill="#a19d97"
+        >
+          <path
+            d="M162.7 210c-1.8 3.3-25.2 44.4-70.1 123.5-4.9 8.3-10.8 12.5-17.7 12.5H9.8c-7.7 0-12.1-7.5-8.5-14.4l69-121.3c.2 0 .2-.1 0-.3l-43.9-75.6c-4.3-7.8 .3-14.1 8.5-14.1H100c7.3 0 13.3 4.1 18 12.2l44.7 77.5zM382.6 46.1l-144 253v.3L330.2 466c3.9 7.1 .2 14.1-8.5 14.1h-65.2c-7.6 0-13.6-4-18-12.2l-92.4-168.5c3.3-5.8 51.5-90.8 144.8-255.2 4.6-8.1 10.4-12.2 17.5-12.2h65.7c8 0 12.3 6.7 8.5 14.1z"
+          />
+        </svg>
+      </a>
+    </div>
   </body>
 </html>
