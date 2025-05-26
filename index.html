@@ -3,58 +3,96 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Alexander Moch - Embedded Systems Architect at THALES Deutschland GmbH</title>
+    <meta name="color-scheme" content="light dark" />
+    <title>Alexander Moch - IT Security Consultant at ERNW Research GmbH</title>
     <meta
       name="description"
-      content="Dr. Alexander Moch is an Embedded Systems Architect at THALES Deutschland GmbH in Ditzingen."
+      content="Dr. Alexander Moch specializes in incident analysis, cybersecurity consulting, and embedded systems architecture with expertise in cryptography and post-quantum security."
     />
     <meta name="author" content="Alexander Moch" />
     <meta
       name="keywords"
-      content="Embedded Systems, Systems Architecture, Cyber Security, THALES, Cryptography, Encryption, Authentication, Post-quantum"
+      content="IT Security, Incident Analysis, Cyber Security Consultant, Embedded Systems, ERNW, Cryptography, Post-quantum"
     />
     <meta name="robots" content="index, follow" />
-    <!-- FONTS. -->
+    <link rel="canonical" href="https://www.alexmoch.com/" />
+
+    <!-- PRELOAD FONT -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5.0.21/files/jetbrains-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/jetbrains-mono@5.0.21/400.min.css" />
-    <!-- FAVICONS. -->
-    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
-    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
-    <link rel="manifest" href="favicon/site.webmanifest" />
-    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
-    <link rel="shortcut icon" href="favicon/favicon.ico" />
-    <meta name="msapplication-TileColor" content="#da532c" />
-    <meta name="msapplication-config" content="favicon/browserconfig.xml" />
-    <meta name="theme-color" content="#ffffff" />
-    <!-- OPEN GRAPH. -->
-    <meta property="og:title" content="Alexander Moch - Embedded Systems Architect at THALES Deutschland GmbH" />
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:title" content="Alexander Moch - IT Security Consultant at ERNW Research GmbH" />
     <meta
       property="og:description"
-      content="Dr. Alexander Moch is an Embedded Systems Architect at THALES Deutschland GmbH in Ditzingen."
+      content="Dr. Alexander Moch specializes in incident analysis, cybersecurity consulting, and embedded systems architecture."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.alexmoch.com" />
     <meta property="og:image" content="https://www.alexmoch.com/image.webp" />
     <meta property="og:site_name" content="Alexander Moch" />
-    <!-- TWITTER CARD. -->
+
+    <!-- TWITTER CARD -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Alexander Moch - Embedded Systems Architect at THALES Deutschland GmbH" />
+    <meta name="twitter:title" content="Alexander Moch - IT Security Consultant at ERNW Research GmbH" />
     <meta
       name="twitter:description"
-      content="Dr. Alexander Moch is an Embedded Systems Architect at THALES Deutschland GmbH in Ditzingen."
+      content="Dr. Alexander Moch specializes in incident analysis, cybersecurity consulting, and embedded systems architecture."
     />
     <meta name="twitter:image" content="https://www.alexmoch.com/image.webp" />
-    <!-- STRUCTURED DATA FOR SITE NAME -->
+
+    <!-- STRUCTURED DATA -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "WebSite",
-        "name": "Dr. Alexander Moch",
-        "alternateName": ["Alexander Moch", "Alex Moch"],
-        "url": "https://www.alexmoch.com/"
-      }
+    {
+      "@context": "https://schema.org",
+      "@graph": [
+        {
+          "@type": "WebSite",
+          "@id": "https://www.alexmoch.com/#website",
+          "url": "https://www.alexmoch.com/",
+          "name": "Alexander Moch",
+          "publisher": { "@id": "https://www.alexmoch.com/#person" }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.alexmoch.com/#person",
+          "name": "Alexander Moch",
+          "alternateName": ["Dr. Alexander Moch", "Alex Moch"],
+          "url": "https://www.alexmoch.com/",
+          "jobTitle": "Incident Analyst & IT Security Consultant",
+          "worksFor": {
+            "@type": "Organization",
+            "name": "ERNW Research GmbH",
+            "url": "https://ernw-research.de/",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "George-Boole-Weg 4",
+              "postalCode": "69124",
+              "addressLocality": "Heidelberg",
+              "addressCountry": "DE"
+            }
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "postalCode": "68161",
+            "addressLocality": "Mannheim",
+            "addressCountry": "DE"
+          },
+          "image": "https://www.alexmoch.com/image.webp",
+          "sameAs": [
+            "https://www.linkedin.com/in/alexander-moch",
+            "https://www.xing.com/profile/Alexander_Moch5",
+            "https://dblp.org/pid/157/0320",
+            "https://gitlab.com/alex-moch",
+            "https://www.wim.uni-mannheim.de/ths/moch"
+          ]
+        }
+      ]
+    }
     </script>
-    <!-- STYLE. -->
+
+    <!-- STYLE -->
     <style>
       :root {
         --fg-main: #a19d97;
@@ -80,7 +118,7 @@
         justify-content: center;
         background-color: var(--bg-main);
         font-family: "JetBrains Mono", monospace;
-        font-size: 18pt;
+        font-size: 1.125rem;
         line-height: 1.5;
         color: var(--fg-main);
         text-align: center;
@@ -90,7 +128,20 @@
         margin: 0;
       }
 
-      .container {
+      .name {
+        color: var(--fg-high);
+        font-size: inherit;
+        font-weight: normal;
+        margin: 0;
+        display: inline;
+      }
+
+      .description {
+        display: inline;
+        margin: 0;
+      }
+
+      main {
         max-width: 800px;
         text-align: left;
         margin: 20px;
@@ -103,67 +154,75 @@
         margin-top: 20px;
       }
 
+      .icons a {
+        color: var(--fg-main);
+        transition: color 0.3s ease;
+      }
+
+      .icons a:hover,
+      .icons a:focus {
+        color: var(--fg-high);
+      }
+
       .icons svg {
         width: 50px;
         height: 50px;
-        cursor: pointer;
-        transition: fill 0.3s ease;
-      }
-
-      .icons a:hover svg {
-        fill: var(--fg-high);
       }
     </style>
+
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png" />
+    <link rel="manifest" href="favicon/site.webmanifest" />
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5" />
+    <link rel="shortcut icon" href="favicon/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="favicon/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
 
   <body>
-    <div class="container">
-      <p>
-        <span style="color: var(--fg-high)">Alexander Moch</span> is an Embedded Systems Architect at THALES Deutschland
-        GmbH in Ditzingen.
-      </p>
+    <main>
+      <h1 class="name">Alexander Moch</h1>
+      <p class="description">is an Incident Analyst &amp; IT Security Consultant at ERNW Research&nbsp;GmbH in Heidelberg.</p>
       <div class="icons">
-        <!-- LinkedIn SVG -->
-        <a href="https://www.linkedin.com/in/alexander-moch" target="_blank" aria-label="LinkedIn">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="var(--fg-main)">
-            <path
-              d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
-            />
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/alexander-moch" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+          <svg role="img" aria-labelledby="iconLinkedIn" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+            <title id="iconLinkedIn">LinkedIn logo</title>
+            <path fill="currentColor" d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
           </svg>
         </a>
-        <!-- Xing SVG -->
-        <a href="https://www.xing.com/profile/Alexander_Moch5" target="_blank" aria-label="Xing">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" fill="var(--fg-main)">
-            <path
-              d="M162.7 210c-1.8 3.3-25.2 44.4-70.1 123.5-4.9 8.3-10.8 12.5-17.7 12.5H9.8c-7.7 0-12.1-7.5-8.5-14.4l69-121.3c.2 0 .2-.1 0-.3l-43.9-75.6c-4.3-7.8 .3-14.1 8.5-14.1H100c7.3 0 13.3 4.1 18 12.2l44.7 77.5zM382.6 46.1l-144 253v.3L330.2 466c3.9 7.1 .2 14.1-8.5 14.1h-65.2c-7.6 0-13.6-4-18-12.2l-92.4-168.5c3.3-5.8 51.5-90.8 144.8-255.2 4.6-8.1 10.4-12.2 17.5-12.2h65.7c8 0 12.3 6.7 8.5 14.1z"
-            />
+        <!-- Xing -->
+        <a href="https://www.xing.com/profile/Alexander_Moch5" target="_blank" rel="noopener noreferrer" aria-label="Xing">
+          <svg role="img" aria-labelledby="iconXing" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+            <title id="iconXing">Xing logo</title>
+            <path fill="currentColor" d="M162.7 210c-1.8 3.3-25.2 44.4-70.1 123.5-4.9 8.3-10.8 12.5-17.7 12.5H9.8c-7.7 0-12.1-7.5-8.5-14.4l69-121.3c.2 0 .2-.1 0-.3l-43.9-75.6c-4.3-7.8 .3-14.1 8.5-14.1H100c7.3 0 13.3 4.1 18 12.2l44.7 77.5zM382.6 46.1l-144 253v.3L330.2 466c3.9 7.1 .2 14.1-8.5 14.1h-65.2c-7.6 0-13.6-4-18-12.2l-92.4-168.5c3.3-5.8 51.5-90.8 144.8-255.2 4.6-8.1 10.4-12.2 17.5-12.2h65.7c8 0 12.3 6.7 8.5 14.1z" />
           </svg>
         </a>
-        <!-- DBLP SVG -->
-        <a href="https://dblp.org/pid/157/0320" target="_blank" aria-label="DBLP">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="var(--fg-main)">
-            <path
-              d="M28.401 19.438l-3.266-12.208c0 0-0.203-0.792-0.964-0.443l-7.464 3.469 1.146 4.266 1.453 5.438 0.010 0.083c0.068 0.625-0.547 1.052-0.547 1.052l-2.505 1.161 0.667 2.516 0.052 0.135c0.094 0.229 0.375 0.802 1.083 1.214l9.266 5.693c0 0 0.906 0.547 0.693-0.224l-2.641-9.87 2.479-1.146c0 0 0.75-0.344 0.536-1.135zM18.349 19.563l-0.016-0.083-1.505-5.625-1.776-6.589v-0.052c0 0-0.214-0.786-1.12-1.333l-9.266-5.693c0 0-0.906-0.547-0.693 0.224l2.651 9.896-2.49 1.161c0 0-0.75 0.344-0.536 1.13l3.266 12.214c0 0 0.214 0.786 0.964 0.443l9.958-4.641c0 0 0.693-0.323 0.563-1.052z"
-            />
+        <!-- DBLP -->
+        <a href="https://dblp.org/pid/157/0320" target="_blank" rel="noopener noreferrer" aria-label="DBLP">
+          <svg role="img" aria-labelledby="iconDblp" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+            <title id="iconDblp">DBLP logo</title>
+            <path fill="currentColor" d="M28.401 19.438l-3.266-12.208c0 0-0.203-0.792-0.964-0.443l-7.464 3.469 1.146 4.266 1.453 5.438 0.010 0.083c0.068 0.625-0.547 1.052-0.547 1.052l-2.505 1.161 0.667 2.516 0.052 0.135c0.094 0.229 0.375 0.802 1.083 1.214l9.266 5.693c0 0 0.906 0.547 0.693-0.224l-2.641-9.87 2.479-1.146c0 0 0.75-0.344 0.536-1.135zM18.349 19.563l-0.016-0.083-1.505-5.625-1.776-6.589v-0.052c0 0-0.214-0.786-1.12-1.333l-9.266-5.693c0 0-0.906-0.547-0.693 0.224l2.651 9.896-2.49 1.161c0 0-0.75 0.344-0.536 1.13l3.266 12.214c0 0 0.214 0.786 0.964 0.443l9.958-4.641c0 0 0.693-0.323 0.563-1.052z" />
           </svg>
         </a>
-        <!-- Graduation SVG -->
-        <a href="https://www.wim.uni-mannheim.de/ths/moch" target="_blank" aria-label="UniMannheim">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" fill="var(--fg-main)">
-            <path
-              d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9l0 28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5l0-24.6c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z"
-            />
+        <!-- University -->
+        <a href="https://www.wim.uni-mannheim.de/ths/moch" target="_blank" rel="noopener noreferrer" aria-label="University of Mannheim">
+          <svg role="img" aria-labelledby="iconUni" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+            <title id="iconUni">University logo</title>
+            <path fill="currentColor" d="M320 32c-8.1 0-16.1 1.4-23.7 4.1L15.8 137.4C6.3 140.9 0 149.9 0 160s6.3 19.1 15.8 22.6l57.9 20.9C57.3 229.3 48 259.8 48 291.9l0 28.1c0 28.4-10.8 57.7-22.3 80.8c-6.5 13-13.9 25.8-22.5 37.6C0 442.7-.9 448.3 .9 453.4s6 8.9 11.2 10.2l64 16c4.2 1.1 8.7 .3 12.4-2s6.3-6.1 7.1-10.4c8.6-42.8 4.3-81.2-2.1-108.7C90.3 344.3 86 329.8 80 316.5l0-24.6c0-30.2 10.2-58.7 27.9-81.5c12.9-15.5 29.6-28 49.2-35.7l157-61.7c8.2-3.2 17.5 .8 20.7 9s-.8 17.5-9 20.7l-157 61.7c-12.4 4.9-23.3 12.4-32.2 21.6l159.6 57.6c7.6 2.7 15.6 4.1 23.7 4.1s16.1-1.4 23.7-4.1L624.2 182.6c9.5-3.4 15.8-12.5 15.8-22.6s-6.3-19.1-15.8-22.6L343.7 36.1C336.1 33.4 328.1 32 320 32zM128 408c0 35.3 86 72 192 72s192-36.7 192-72L496.7 262.6 354.5 314c-11.1 4-22.8 6-34.5 6s-23.5-2-34.5-6L143.3 262.6 128 408z" />
           </svg>
         </a>
-        <!-- GitLab SVG -->
-        <a href="https://gitlab.com/alex-moch" target="_blank" aria-label="GitLab">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="var(--fg-main)">
-            <path
-              d="M503.5 204.6L502.8 202.8L433.1 21C431.7 17.5 429.2 14.4 425.9 12.4C423.5 10.8 420.8 9.9 417.9 9.6C415 9.3 412.2 9.7 409.5 10.7C406.8 11.7 404.4 13.3 402.4 15.5C400.5 17.6 399.1 20.1 398.3 22.9L351.3 166.9H160.8L113.7 22.9C112.9 20.1 111.5 17.6 109.6 15.5C107.6 13.4 105.2 11.7 102.5 10.7C99.9 9.7 97 9.3 94.1 9.6C91.3 9.9 88.5 10.8 86.1 12.4C82.8 14.4 80.3 17.5 78.9 21L9.3 202.8L8.5 204.6C-1.5 230.8-2.7 259.6 5 286.6C12.8 313.5 29.1 337.3 51.5 354.2L51.7 354.4L52.3 354.8L158.3 434.3L210.9 474L242.9 498.2C246.6 500.1 251.2 502.5 255.9 502.5C260.6 502.5 265.2 500.1 268.9 498.2L300.9 474L353.5 434.3L460.2 354.4L460.5 354.1C482.9 337.2 499.2 313.5 506.1 286.6C514.7 259.6 513.5 230.8 503.5 204.6z"
-            />
+        <!-- GitLab -->
+        <a href="https://gitlab.com/alex-moch" target="_blank" rel="noopener noreferrer" aria-label="GitLab">
+          <svg role="img" aria-labelledby="iconGitlab" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+            <title id="iconGitlab">GitLab logo</title>
+            <path fill="currentColor" d="M503.5 204.6L502.8 202.8L433.1 21C431.7 17.5 429.2 14.4 425.9 12.4C423.5 10.8 420.8 9.9 417.9 9.6C415 9.3 412.2 9.7 409.5 10.7C406.8 11.7 404.4 13.3 402.4 15.5C400.5 17.6 399.1 20.1 398.3 22.9L351.3 166.9H160.8L113.7 22.9C112.9 20.1 111.5 17.6 109.6 15.5C107.6 13.4 105.2 11.7 102.5 10.7C99.9 9.7 97 9.3 94.1 9.6C91.3 9.9 88.5 10.8 86.1 12.4C82.8 14.4 80.3 17.5 78.9 21L9.3 202.8L8.5 204.6C-1.5 230.8-2.7 259.6 5 286.6C12.8 313.5 29.1 337.3 51.5 354.2L51.7 354.4L52.3 354.8L158.3 434.3L210.9 474L242.9 498.2C246.6 500.1 251.2 502.5 255.9 502.5C260.6 502.5 265.2 500.1 268.9 498.2L300.9 474L353.5 434.3L460.2 354.4L460.5 354.1C482.9 337.2 499.2 313.5 506.1 286.6C514.7 259.6 513.5 230.8 503.5 204.6z" />
           </svg>
         </a>
       </div>
-    </div>
+    </main>
   </body>
 </html>
